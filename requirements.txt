@@ -1,0 +1,13 @@
+# Pinned for cross-platform reproducibility. torch 2.2.2 is the last release with
+# Intel-macOS wheels and requires Python 3.10-3.12 plus numpy<2. This exact set is
+# mutually compatible and runs the notebook on Intel macOS, Apple Silicon, and Linux.
+# (On Apple Silicon / Linux / Colab you may relax these pins to newer versions.)
+numpy<2
+torch==2.2.2
+transformers==4.44.2
+sentence-transformers==3.1.1
+huggingface_hub<0.26
+chromadb
+rank-bm25
+pypdf
+# Models download from the Hugging Face Hub on first run (CPU-friendly).
